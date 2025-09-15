@@ -3,7 +3,7 @@ const path = require("path");
 const app = express();
 const PORT = 3000;
 
-// Middleware pour servir les fichiers statiques (CSS, JS, images)
+// Middleware pour servir les fichiers statiques 
 app.use(express.static(path.join(__dirname, "public")));
 
 // Routes
