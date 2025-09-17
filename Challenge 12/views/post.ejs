@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= post.title %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1><%= post.title %></h1>
+  <p style="max-width: 600px; margin: 20px auto; background: #fff; padding: 15px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.1);">
+    <%= post.content %>
+  </p>
+  <div style="text-align: center;">
+    <a href="/posts">⬅ Back to posts</a>
+  </div>
+</body>
+</html>
