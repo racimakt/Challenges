@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit <%= post.title %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/posts">Home</a>
+  </nav>
+
+  <h1>Edit Post</h1>
+
+  <form class="form-section" action="/posts/<%= post._id %>?_method=PUT" method="POST">
+    <input type="text" name="title" value="<%= post.title %>" required>
+    <textarea name="content" required><%= post.content %></textarea>
+    <button type="submit">Update</button>
+  </form>
+
+  <a class="btn-back" href="/posts/<%= post._id %>">Cancel</a>
+</body>
+</html>

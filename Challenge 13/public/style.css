@@ -1,0 +1,114 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+nav {
+  background: #007bff;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #222;
+}
+
+.form-section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.posts-list {
+  max-width: 800px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.posts-list article {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.post-detail {
+  max-width: 700px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.actions {
+  margin-top: 15px;
+}
+
+.btn-edit, .btn-delete, .btn-back {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-edit {
+  background: #ffc107;
+  color: #222;
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-back {
+  background: #6c757d;
+  color: white;
+}

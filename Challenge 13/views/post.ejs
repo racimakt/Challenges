@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= post.title %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/posts">Home</a>
+  </nav>
+
+  <section class="post-detail">
+    <h1><%= post.title %></h1>
+    <p><%= post.content %></p>
+    <small>Created at: <%= post.createdAt.toDateString() %></small>
+
+    <div class="actions">
+      <a class="btn-edit" href="/posts/<%= post._id %>/edit">✏ Edit</a>
+      <form action="/posts/<%= post._id %>?_method=DELETE" method="POST" style="display:inline;">
+        <button class="btn-delete" type="submit">🗑 Delete</button>
+      </form>
+    </div>
+
+    <a class="btn-back" href="/posts">⬅ Back to posts</a>
+  </section>
+</body>
+</html>
