@@ -7,7 +7,7 @@ const PORT = 3000;
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public")); // ✅ to serve CSS
+app.use(express.static("public")); 
 
 // Routes
 app.use("/posts", postsRouter);
